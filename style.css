@@ -1,0 +1,188 @@
+/* SETTINGS */
+/* Variables and configurations */
+:root {
+  --color_vinculos:  #065fd4;
+}
+  /* TOOLS */ 
+  /* GENERIC */
+  
+  
+  *{
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: rgba(0, 0, 0, 0.795);;
+    color: white;
+  }
+  
+  /* ELEMENTS */
+  /* OBJECTS */
+ 
+  
+  .principal {         /* grid principal de toda la web */ 
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto ;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  /* COMPONENTS */
+  header {                  /*1° grid  */
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 10px; 
+
+   
+    
+  }
+  
+  header img {              
+    align-self: start; /* Alinea la imagen al inicio */
+    height: 41px;
+    margin-right: 50px;
+
+     /* Estilos base para pantallas más pequeñas (móviles y tablets) */
+@media (max-width: 768px) {
+   
+    width: 100%;
+    padding: 10px;
+}
+  }
+  
+  nav form {
+    display: flex;
+     /* Estilos base para pantallas más pequeñas (móviles y tablets) */
+
+  }
+  
+  nav input[type="text"] {
+    flex-grow: 1;             
+    padding: 8px;
+     /* Estilos base para pantallas más pequeñas (móviles y tablets) */
+@media (max-width: 768px) {
+   
+    width: 100%;
+    padding: 10px;
+}
+  }
+  
+  nav input[type="submit"] {
+    padding: 8px;
+   
+    background: grey;
+    color: black;
+     /* Estilos base para pantallas más pequeñas (móviles y tablets) */
+@media (max-width: 768px) {
+   
+    width: 100%;
+    padding: 10px;
+}
+    
+  }
+  
+  .contenido_secundario {      /* 2° grid*/
+    grid-column: 1 / 2;      /*class ocuara 1 columna */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+  }
+  
+  .descripcion {
+    padding: 10px;
+  }
+  
+  .descripcion iframe {
+    width: 100%;
+    height: 451px;
+     /* Estilos base para pantallas más pequeñas (móviles y tablets) */
+@media (max-width: 768px) {
+   
+    width: 100%;
+    padding: 10px;
+}
+  }
+  
+  .comentarios {
+  
+    padding: 10px;
+     /* Estilos base para pantallas más pequeñas (móviles y tablets) */
+
+   
+  }
+  
+  .comentarios section {
+    padding: 10px;
+  }
+  
+  .comentarios p {
+    padding: 10px;
+  }
+  
+  .comentarios strong {
+    color:  var(--color_vinculos);
+  }
+  
+  .recomendaciones {             /* 3° grid*/
+    grid-column: 1.8 / 1.2;
+    display: grid;
+    gap: 30px;
+    align-content: start;
+  }
+  
+  .recomendaciones section {
+   display: flex;
+    /* Estilos base para pantallas más pequeñas (móviles y tablets) */
+
+  }
+ 
+  .recomendaciones img {
+    width: 50%;
+    height: auto;
+
+     /* Estilos base para pantallas más pequeñas (móviles y tablets) */
+@media (max-width: 768px) {
+   
+    width: 100%;
+    padding: 10px;
+}
+  }
+
+  
+  footer {
+    grid-column: 1 / -1;
+   
+    padding: 10px;
+   
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+
+     /* Estilos base para pantallas más pequeñas (móviles y tablets) */
+@media (max-width: 768px) {
+   
+    width: 100%;
+    padding: 10px;
+}
+  }
+  
+  footer a {
+    color:  var(--color_vinculos);
+    
+  }
+  
+  /* UTILITIES */
+
+  
+  
+ 
+  
